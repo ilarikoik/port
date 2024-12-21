@@ -18,7 +18,7 @@ export default function NavBar({
   return (
     <div
       className={`w-full h-fit p-4 ${
-        darkMode ? "bg-green text-black " : "bg-blue-500 text-white "
+        !darkMode ? "bg-green text-black " : "bg-blue-500 text-white "
       }`}
     >
       <div className="flex flex-row justify-between">
@@ -30,11 +30,11 @@ export default function NavBar({
           <li className="p-2 font-semibold">Work</li>
           <li
             className={`p-2 font-semibold cursor-pointer hover:underline ${
-              darkMode ? "text-white" : "text-black"
+              !darkMode ? "text-white" : "text-black"
             }`}
             onClick={toggleDarkMode}
           >
-            {darkMode ? "Light Theme" : "Dark Theme"}
+            {!darkMode ? "Light Theme" : "Dark Theme"}
           </li>
         </ul>
         <div className="flex md:hidden flex-col justify-center ">
@@ -63,11 +63,11 @@ export default function NavBar({
             <li className="p-2 font-semibold">Work</li>
             <li
               className={`p-2 font-semibold cursor-pointer hover:underline ${
-                darkMode ? "text-white" : "text-black"
+                !darkMode ? "text-white" : "text-black"
               }`}
               onClick={toggleDarkMode}
             >
-              {darkMode ? "Light Theme" : "Dark Theme"}
+              {!darkMode ? "Light Theme" : "Dark Theme"}
             </li>
           </ul>
         )}

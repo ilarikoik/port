@@ -16,18 +16,18 @@ export default function About({ darkMode }: { darkMode: boolean }) {
   return (
     <div
       className={`w-full h-fit flex flex-col font-semibold ${
-        darkMode ? "bg-neutral-900 text-white" : "bg-neutral-100 text-black"
+        !darkMode ? "bg-neutral-900 text-white" : "bg-neutral-100 text-black"
       } flex justify-center items-center`}
     >
       <div className="max-w-[1400px] max-h-[1000px] h-full w-full flex justify-center py-10">
         <div
           className={`${
-            darkMode ? "bg-gray-800 text-white" : "bg-neutral-100 text-black"
+            !darkMode ? "bg-gray-800 text-white" : "bg-neutral-100 text-black"
           } h-[600px] flex items-center justify-center flex-col md:flex-row`}
         >
           <div
             className={`flex justify-center rounded-lg${
-              darkMode ? "bg-green" : "bg-gray"
+              !darkMode ? "bg-green" : "bg-gray"
             } w-60 h-96`}
           >
             <img
@@ -42,26 +42,39 @@ export default function About({ darkMode }: { darkMode: boolean }) {
             />
           </div>
           <p className="w-2/3 md:p-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
-            voluptatem pariatur recusandae minima sequi ipsum dolorum obcaecati
-            delectus quaerat eligendi, expedita debitis dolorem beatae iure
-            deserunt! Earum expedita officiis quam. Dicta labore repellendus
+            Olen{" "}
+            <strong className={`${!darkMode ? "text-green" : "text-blue-500"}`}>
+              [Nimesi]
+            </strong>
+            , kolmannen vuoden tietojenkäsittelyn opiskelija Haaga-Heliassa,
+            erikoistuen ohjelmistokehitykseen.
+            <br />
+            <br />
+            <p className={`${!darkMode ? "text-green" : "text-blue-500"}`}>
+              React/React Native,Javascript, Typescript, Java, SQL
+            </p>
           </p>
         </div>
       </div>
       <div
         className={`max-w-[1200px] h-fit p-4 flex justify-center flex-col items-center 
-          ${darkMode ? "  text-white" : "  text-black"}`}
+          ${!darkMode ? "  text-white" : "  text-black"}`}
       >
-        <h1>mitä miksi</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim magni
-          recusandae amet cumque deleniti explicabo mollitia, magnam velit cum
-          error dolorum culpa unde! Distinctio ipsum quidem illo recusandae
-          molestias et! Magnam ratione quae similique ullam, quis sapiente!
-          Omnis, accusantium numquam consequatur totam possimus sequi
-          reprehenderit quam porro doloremque fugit illum dolorum architecto id
-          debitis nostrum consequuntur officiis! At, obcaecati iure.
+        <h1
+          className={`text-2xl md:text-3xl ${
+            !darkMode ? "text-green" : "text-blue-500"
+          }`}
+        >
+          Mitä etsin?
+        </h1>
+        <p className="text-center">
+          Etsin mahdollisuuksia päästä syventämään taitojani käytännössä ja
+          kehittymään ohjelmistokehittäjänä. Erityisesti etsin
+          harjoittelupaikkaa tai työpaikkaa, jossa voisin työskennellä käytännön
+          projekteissa ja oppia kokeneemmilta ammattilaisilta. Lisäksi olen
+          kiinnostunut opparin tekemisestä, jossa voin yhdistää opintojeni
+          aikana oppimani ja tuoda uusia ideoita ja ratkaisukeskeistä ajattelua
+          tiimiin.
         </p>
       </div>
     </div>

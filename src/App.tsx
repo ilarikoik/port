@@ -10,7 +10,7 @@ function App() {
     setDarkMode(!darkMode);
   };
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={!darkMode ? "dark" : ""}>
       <div className="bg-neutral-100 min-h-screen w-screen dark:bg-neutral-900">
         <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <About darkMode={darkMode} />
