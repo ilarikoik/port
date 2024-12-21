@@ -26,6 +26,7 @@ export default function About({ darkMode }: { darkMode: boolean }) {
           } h-[600px] flex items-center justify-center flex-col md:flex-row`}
         >
           <div
+            id="about"
             className={`flex justify-center rounded-lg${
               !darkMode ? "bg-green" : "bg-gray"
             } w-60 h-96`}

@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import NavBar from "./components/Nav";
 import About from "./components/About";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import { dark } from "@mui/material/styles/createPalette";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -10,18 +12,26 @@ function App() {
     setDarkMode(!darkMode);
   };
   return (
-    <div className={!darkMode ? "dark" : ""}>
-      <div className="bg-neutral-100 min-h-screen w-screen dark:bg-neutral-900">
-        <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <About darkMode={darkMode} />
-        <button
-          onClick={toggleDarkMode}
-          className="  w-14 h-fit p-3 bg-gray dark:bg-neutral-100 rounded-full border-none dark:text-gray z-10"
-        >
-          {darkMode ? "light" : "dark"}
-        </button>
+    <>
+      <div className={!darkMode ? "dark" : ""}>
+        <div className="bg-neutral-100 min-h-screen w-screen dark:bg-neutral-900">
+          <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <About darkMode={darkMode} />
+          <div className="flex justify-end sticky bottom-20 mr-10 z-10  text-white">
+            <a
+              href="#navbar"
+              className={`${
+                darkMode
+                  ? "bg-neutral-300 text-black rounded-full p-2"
+                  : "bg-black rounded-full p-2"
+              }`}
+            >
+              <ArrowUpwardIcon href="#navbar" />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

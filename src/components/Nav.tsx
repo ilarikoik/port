@@ -17,6 +17,7 @@ export default function NavBar({
   //   "w-full h-fit p-4 ";
   return (
     <div
+      id="navbar"
       className={`w-full h-fit p-4 ${
         !darkMode ? "bg-green text-black " : "bg-blue-500 text-white "
       }`}
@@ -25,7 +26,9 @@ export default function NavBar({
         <h1 className="p-2 font-bold text-2xl">IK</h1>
         {/* desktop */}
         <ul className="hidden md:flex flex-row  w-2/4  justify-around">
-          <li className="p-2 font-semibold">About</li>
+          <li className="p-2 font-semibold">
+            <a href="#about">About</a>
+          </li>
           <li className="p-2 font-semibold">Projects</li>
           <li className="p-2 font-semibold">Work</li>
           <li
