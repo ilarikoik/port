@@ -26,8 +26,21 @@ export default function About({ darkMode }: { darkMode: boolean }) {
           } h-[600px] flex items-center justify-center flex-col md:flex-row`}
         >
           <div
-            className={`${darkMode ? "bg-green" : "bg-gray"} w-60 h-96`}
-          ></div>
+            className={`flex justify-center rounded-lg${
+              darkMode ? "bg-green" : "bg-gray"
+            } w-60 h-96`}
+          >
+            <img
+              src="https://i.pinimg.com/236x/d8/8a/49/d88a493028f91ddf83f43278fd196f1f.jpg"
+              alt="Image"
+              style={{
+                width: "100%", // Aseta haluamasi leveys
+                height: "auto", // Korkeus säilyttää kuvasuhteen
+                objectFit: "cover",
+                borderRadius: "15px",
+              }}
+            />
+          </div>
           <p className="w-2/3 md:p-5">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
             voluptatem pariatur recusandae minima sequi ipsum dolorum obcaecati

@@ -61,6 +61,14 @@ export default function NavBar({
             <li className="p-2 font-semibold">About</li>
             <li className="p-2 font-semibold">Projects</li>
             <li className="p-2 font-semibold">Work</li>
+            <li
+              className={`p-2 font-semibold cursor-pointer hover:underline ${
+                darkMode ? "text-white" : "text-black"
+              }`}
+              onClick={toggleDarkMode}
+            >
+              {darkMode ? "Light Theme" : "Dark Theme"}
+            </li>
           </ul>
         )}
       </div>
