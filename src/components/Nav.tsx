@@ -32,7 +32,9 @@ export default function NavBar({
           <li className="p-2 font-semibold">
             <a href="#projects">Projects</a>
           </li>
-          <li className="p-2 font-semibold">Work</li>
+          <li className="p-2 font-semibold">
+            <a href="#contact">Contact</a>
+          </li>
           <li
             className={`p-2 font-semibold cursor-pointer hover:underline ${
               !darkMode ? "text-white" : "text-black"

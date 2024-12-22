@@ -10,7 +10,10 @@ export default function Contact({ darkMode }: { darkMode: boolean }) {
       action="https://formsubmit.co/2b09ad9c2bbcfd8e3857e1e960123422"
       method="POST"
     >
-      <div className="h-fit p-2 w-full  flex flex-col justify-center items-center">
+      <div
+        id="contact"
+        className="h-fit p-2 w-full  flex flex-col justify-center items-center"
+      >
         <h1
           className={`text-2xl p-2 ${
             !darkMode ? " text-green " : "text-blue-500"
