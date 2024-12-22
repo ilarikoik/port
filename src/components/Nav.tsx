@@ -29,7 +29,9 @@ export default function NavBar({
           <li className="p-2 font-semibold">
             <a href="#about">About</a>
           </li>
-          <li className="p-2 font-semibold">Projects</li>
+          <li className="p-2 font-semibold">
+            <a href="#projects">Projects</a>
+          </li>
           <li className="p-2 font-semibold">Work</li>
           <li
             className={`p-2 font-semibold cursor-pointer hover:underline ${
