@@ -24,14 +24,26 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
               !darkMode ? " text-white" : "text-neutral-900"
             }`}
           >
-            <a href="">Github</a>
+            <a
+              href="https://github.com/ilarikoik"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
           </li>
           <li
             className={`"text-md font-semibold" ${
               !darkMode ? " text-white" : "text-neutral-900"
             }`}
           >
-            <a href="">Leetcode</a>
+            <a
+              href="https://leetcode.com/u/ilarikoik/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leetcode
+            </a>
           </li>
         </ul>
       </div>
