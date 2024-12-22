@@ -1,5 +1,3 @@
-import { dark } from "@mui/material/styles/createPalette";
-
 export default function Footer({ darkMode }: { darkMode: boolean }) {
   return (
     <>

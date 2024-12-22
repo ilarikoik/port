@@ -8,7 +8,7 @@ export default function NavBar({
   toggleDarkMode: () => void;
   //   toggleDarkMode: () => void; on TypeScript-tyyppimääritys, joka määrittelee, että toggleDarkMode on funktio, joka ei ota vastaan mitään argumentteja (tämän vuoksi ()) ja ei palauta mitään (tämän vuoksi void).
 }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -65,9 +65,15 @@ export default function NavBar({
       <div className="flex flex-col ">
         {!isOpen && (
           <ul className="flex flex-col md:hidden justify-center items-center">
-            <li className="p-2 font-semibold">About</li>
-            <li className="p-2 font-semibold">Projects</li>
-            <li className="p-2 font-semibold">Work</li>
+            <li className="p-2 font-semibold">
+              <a href="#about">About</a>
+            </li>
+            <li className="p-2 font-semibold">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="p-2 font-semibold">
+              <a href="#contact">Contact</a>
+            </li>
             <li
               className={`p-2 font-semibold cursor-pointer hover:underline ${
                 !darkMode ? "text-white" : "text-black"

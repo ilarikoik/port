@@ -6,7 +6,6 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import { dark } from "@mui/material/styles/createPalette";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

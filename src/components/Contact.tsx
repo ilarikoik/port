@@ -1,5 +1,3 @@
-import { dark } from "@mui/material/styles/createPalette";
-
 export default function Contact({ darkMode }: { darkMode: boolean }) {
   const send = () => {
     location.reload();
