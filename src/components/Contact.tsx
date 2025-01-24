@@ -22,15 +22,24 @@ export default function Contact({ darkMode }: { darkMode: boolean }) {
         <div className="flex w-full max-w-[1000px] flex-col">
           <input
             className={` p-2 mb-2 rounded-lg ${
-              !darkMode ? "bg-neutral-700 " : "bg-neutral-300"
+              !darkMode
+                ? "bg-neutral-700  text-white "
+                : "bg-neutral-300  text-gray"
             }`}
             type="text"
             name="Email"
             placeholder="Email"
           />
           <input
+            type="hidden"
+            name="_next"
+            value="https://ilarikoik.github.io/port/"
+          />
+          <input
             className={` p-2 mb-2 rounded-lg ${
-              !darkMode ? "bg-neutral-700" : "bg-neutral-300"
+              !darkMode
+                ? "bg-neutral-700  text-white"
+                : "bg-neutral-300  text-gray"
             }`}
             type="text"
             name="Title"
@@ -38,7 +47,9 @@ export default function Contact({ darkMode }: { darkMode: boolean }) {
           />
           <textarea
             className={` p-2 mb-2 rounded-lg ${
-              !darkMode ? "bg-neutral-700" : "bg-neutral-300"
+              !darkMode
+                ? "bg-neutral-700  text-white"
+                : "bg-neutral-300  text-gray"
             }`}
             placeholder="Message"
             name="Message"
@@ -58,4 +69,3 @@ export default function Contact({ darkMode }: { darkMode: boolean }) {
     </form>
   );
 }
-// 2b09ad9c2bbcfd8e3857e1e960123422

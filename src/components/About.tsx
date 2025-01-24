@@ -11,6 +11,8 @@
 //   );
 // }
 // { nimi, ikä }: Tämä purkaa nimi ja ikä-kentät props-objektista, jolloin voit käyttää niitä suoraan komponentissa.
+import Lottie from "lottie-react";
+import lottieman from "../lottie/lottieman.json";
 
 export default function About({ darkMode }: { darkMode: boolean }) {
   return (
@@ -31,8 +33,8 @@ export default function About({ darkMode }: { darkMode: boolean }) {
               !darkMode ? "bg-green" : "bg-gray"
             } w-60 h-96`}
           >
-            <img
-              src="https://i.pinimg.com/236x/d8/8a/49/d88a493028f91ddf83f43278fd196f1f.jpg"
+            {/* <img
+              src="https://....."
               alt="Image"
               style={{
                 width: "100%", // Aseta haluamasi leveys
@@ -40,12 +42,13 @@ export default function About({ darkMode }: { darkMode: boolean }) {
                 objectFit: "cover",
                 borderRadius: "15px",
               }}
-            />
+            /> */}
+            <Lottie animationData={lottieman} />
           </div>
           <p className="w-2/3 md:p-5">
             Olen{" "}
             <strong className={`${!darkMode ? "text-green" : "text-blue-500"}`}>
-              [Nimesi]
+              Ilari
             </strong>
             , kolmannen vuoden tietojenkäsittelyn opiskelija Haaga-Heliassa,
             erikoistuen ohjelmistokehitykseen.
