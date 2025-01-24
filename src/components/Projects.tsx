@@ -120,7 +120,7 @@ export default function Projects({ darkMode }: { darkMode: boolean }) {
               <p className="mt-5">
                 <a
                   target="_blank"
-                  href="https://github.com/ilarikoik/wrappedfront"
+                  href="https://github.com/ilarikoik/wrappedfront/tree/main/wrappedfront"
                 >
                   [Github]
                 </a>
