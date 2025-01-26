@@ -55,7 +55,8 @@ export default function About({ darkMode }: { darkMode: boolean }) {
             <br />
             <br />
             <p className={`${!darkMode ? "text-green" : "text-blue-500"}`}>
-              React/React Native,Javascript, Typescript, Java, SQL
+              React/React Native,Javascript, Typescript, Java, SQL, Tailwind,
+              CSS
             </p>
           </p>
         </div>
