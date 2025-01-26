@@ -1,6 +1,7 @@
 export default function Contact({ darkMode }: { darkMode: boolean }) {
   const send = () => {
-    location.reload();
+    // location.reload();
+    console.log("Ok");
   };
   return (
     <form
