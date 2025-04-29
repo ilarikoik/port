@@ -1,4 +1,5 @@
 import blg1 from "../assets/blg1.png";
+import travelist_plan from "../assets/travlist_plan.png";
 import lentäjä from "../assets/lentäjä.png";
 import mkob from "../assets/mkob.png";
 import wrapped from "../assets/wrapped.png";
@@ -27,23 +28,20 @@ export default function Projects({ darkMode }: { darkMode: boolean }) {
             }}
           >
             <div
-              className={`h-full opacity-0 hover:opacity-95 hover:text-center ${
+              className={`h-full opacity-0 p-3 hover:opacity-95 hover:text-center ${
                 !darkMode ? "hover:text-green" : "hover:text-blue-500"
               } hover:font-semibold hover:bg-black flex flex-col justify-center rounded-lg`}
             >
               <p>
-                Tämän puhelinsovelluksen käyttäjänä voi selata tulevien
-                elokuvien julkaisuajankohtia, tarkastella niiden arviointeja ja
-                saada yleiskäsityksen mistä elokuva kertoo.
+                Käyttäjänä voi selata tulevien elokuvien julkaisuajankohtia,
+                tarkastella niiden arviointeja ja saada yleiskäsityksen mistä
+                elokuva kertoo.
                 <br />
-                <br />
-                Käyttäjä voi myös lisätä omalle katselulistalleen elokuvia ja
-                arvioida sekä selata elokuvia omien arvioiden perusteella, jotta
-                henkilökohtaiset suosikit löytyvät helposti.
+                Käyttäjä voi myös lisätä omalle katselulistalleen ja arvioida
+                elokuvia, jotta henkilökohtaiset suosikit löytyvät helposti.
                 <br />
                 Myös elokuvateatterit oman sijainnin perusteella löytyvät
                 nopeasti.
-                <br />
                 <br />
                 React Native, SQLite
               </p>
@@ -130,7 +128,7 @@ export default function Projects({ darkMode }: { darkMode: boolean }) {
           <div
             className=" h-80 rounded-lg m-5 border-2 border-gray"
             style={{
-              backgroundImage: `url(${blg1})`,
+              backgroundImage: `url(${travelist_plan})`,
               backgroundSize: "cover", // Skaalaa kuva täyttämään alue
               backgroundRepeat: "no-repeat", // Ei toistoa
               backgroundPosition: "center", // Keskittää kuvan
@@ -142,21 +140,17 @@ export default function Projects({ darkMode }: { darkMode: boolean }) {
               } hover:font-semibold hover:bg-black flex flex-col justify-center rounded-lg`}
             >
               <p>
-                Tämä sovellus on luotu korkeakouluopiskelijoiden väliseen
-                keskusteluun ja "blogimaisten" postauksien luomiseen.
+                Web sovellus, jonka avulla pystyy suunnittelemaan ja
+                budjetoimaan matkoja ystävien kanssa.
                 <br />
-                Sovelluksessa käyttäjät voivat jakaa ajatuksiaan ja postauksiaan
-                eri aiheista, keskustella muiden opiskelijoiden kanssa ja saada
-                ideoita muilta korkeakouluopiskelijoilta.
-                <br />
-                <br />
-                React, TypeScript, Tailwind. <br /> Firebase tarjoaa
-                autentikoinnin ja tietokannan, jotta käyttäjät voivat luoda
-                tilejä, kirjautua sisään ja tallentaa omat postauksensa
-                pilvipalveluun.
+                Teknologiat: React Typescript, Tailwind, Firebase autentikaatio
+                ja database React
               </p>
               <p className="mt-5">
-                <a target="_blank" href="https://github.com/ilarikoik/blog">
+                <a
+                  target="_blank"
+                  href="https://github.com/ilarikoik/travelist"
+                >
                   [Github]
                 </a>
               </p>
